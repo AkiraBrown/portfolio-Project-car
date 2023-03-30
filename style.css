@@ -1,4 +1,4 @@
-body {
+#play--area--body {
   /*Components needed for background animation*/
   background: linear-gradient(100deg, #0b5904, #138c08, #16a808, #1ac90a);
   height: 100vh;

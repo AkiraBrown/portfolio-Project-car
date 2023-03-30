@@ -14,13 +14,16 @@
 
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body id="play--area--body">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <h3 class="navbar-brand">BlackJack</h3>
 
-        <button type="button" class="btn btn-secondary" id="btnGND">
+        <button type="button" class="btn btn-secondary" id="btn--getNewDeck">
           Get New Deck
+        </button>
+        <button type="button" class="btn btn-secondary" id="btn--shufffle">
+          Shuffle Deck
         </button>
       </div>
     </nav>
@@ -28,13 +31,21 @@
       <div id="dealer--div" class="px-4 py-5 my-5 text-center">
         <div>
           <h3>Dealer</h3>
+          <div id="dealer--hand"></div>
         </div>
       </div>
-      <div class="breadcrumb"></div>
+      <div class="lg"></div>
       <div id="player--div" class="px-4 py-5 my-5 text-center">
         <div>
-          <h4>Player</h4>
+          <h3>Player</h3>
+          <div id="player--hand"></div>
         </div>
+        <button type="button" class="btn btn-secondary" id="btn--hit">
+          Hit
+        </button>
+        <button type="button" class="btn btn-secondary" id="btn--stay">
+          Stay
+        </button>
       </div>
     </main>
 
